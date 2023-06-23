@@ -17,7 +17,7 @@ function App() {
               <Skillset />
       </div>
     </div>
-  );
+  ); 
 }
 
 function Avatar() {
