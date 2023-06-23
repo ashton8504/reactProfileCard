@@ -1,5 +1,12 @@
 
 
+const skills = [
+    { skill: "React", emoji: "🚀", color: "dodgerBlue" },
+    { skill: "JavaScript", emoji: "🚀", color: "green" },
+    { skill: "HTML+CSS", emoji: "🚀", color: "pink" },
+    { skill: "Bootstrap", emoji: "🚀", color: "orange" },
+    { skill: "GitHub", emoji: "🚀", color: "grey" },
+  ];
 
 function App() {
   return (
@@ -31,11 +38,14 @@ function Intro() {
 function Skillset() {
     return (
         <div className="skill-list">
-            <Skill skill="React" emoji="🚀" color="dodgerBlue" />
-            <Skill skill="JavaScript" emoji="🚀" color="green" />
-            <Skill skill="HTML+CSS" emoji="🚀" color="pink" />
-            <Skill skill="Bootstrap" emoji="🚀" color="orange" />
-            <Skill skill="GitHub" emoji="🚀" color="grey" />
+            {skills.map((skill, index) => (
+                <Skill
+                    key={index}
+                    skill={skill.skill}
+                    emoji={skill.emoji}
+                    color={skill.color}
+                />
+            ))}
         </div>
     
     )
