@@ -1,11 +1,11 @@
 
 
 const skills = [
-    { skill: "React", emoji: "🚀", color: "dodgerBlue" },
-    { skill: "JavaScript", emoji: "🚀", color: "green" },
+    { skill: "React", emoji: "⚛️", color: "dodgerBlue" },
+    { skill: "JavaScript", emoji: "💻 ", color: "green" },
     { skill: "HTML+CSS", emoji: "🚀", color: "pink" },
-    { skill: "Bootstrap", emoji: "🚀", color: "orange" },
-    { skill: "GitHub", emoji: "🚀", color: "grey" },
+    { skill: "Bootstrap", emoji: "🅱️", color: "orange" },
+    { skill: "GitHub", emoji: "👩‍🚀", color: "grey" },
   ];
 
 function App() {
@@ -55,7 +55,7 @@ function Skill({skill, emoji, color}) {
     return (
         <div className="skill" style={{backgroundColor: color}}>
             <span>{skill}</span>
-            <span>{ emoji}</span>
+            <span>{emoji}</span>
         </div>
     )
 }
